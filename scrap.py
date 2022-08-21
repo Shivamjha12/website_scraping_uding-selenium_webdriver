@@ -45,8 +45,8 @@ while(wl):
         for i in art:
             title = i.find_element(By.CLASS_NAME, 'post-card-inline__title').text
             date  = i.find_element(By.CLASS_NAME, 'post-card-inline__date').text
-            titles.append(title)
-            dates.append(date)
+            titles.append(str(title))
+            dates.append(str(date))
             print(title," line 47")
         time.sleep(5)
     except TimeoutException:
